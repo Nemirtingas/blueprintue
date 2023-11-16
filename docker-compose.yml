@@ -1,0 +1,12 @@
+services:
+  blueprintue:
+    build:
+      context: build_context
+      dockerfile: dockerfile
+    hostname: blueprintue
+    logging:
+      options:
+        max-size: 10m
+    restart: 'no'
+    volumes:
+      - './blueprintue:/var/www'
