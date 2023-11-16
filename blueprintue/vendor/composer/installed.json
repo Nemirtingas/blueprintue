@@ -1,0 +1,658 @@
+{
+    "packages": [
+        {
+            "name": "erusev/parsedown",
+            "version": "1.7.4",
+            "version_normalized": "1.7.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "time": "2019-12-30T22:54:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
+            },
+            "install-path": "../erusev/parsedown"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.6.5",
+            "version_normalized": "6.6.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "8b6386d7417526d1ea4da9edb70b8352f7543627"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/8b6386d7417526d1ea4da9edb70b8352f7543627",
+                "reference": "8b6386d7417526d1ea4da9edb70b8352f7543627",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "ext-hash": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "doctrine/annotations": "^1.2",
+                "php-parallel-lint/php-console-highlighter": "^1.0.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3.2",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.6.2",
+                "yoast/phpunit-polyfills": "^1.0.0"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)",
+                "thenetworg/oauth2-azure": "Needed for Microsoft XOAUTH2 authentication"
+            },
+            "time": "2022-10-07T12:23:10+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.6.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Synchro",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../phpmailer/phpmailer"
+        },
+        {
+            "name": "rancoud/application",
+            "version": "5.2.2",
+            "version_normalized": "5.2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Application.git",
+                "reference": "efb03b2a96dee479a7730e88461112760cee6d1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Application/zipball/efb03b2a96dee479a7730e88461112760cee6d1c",
+                "reference": "efb03b2a96dee479a7730e88461112760cee6d1c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0",
+                "rancoud/environment": "^2.0",
+                "rancoud/router": "^3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "rancoud/database": "^5.0 || ^6.0",
+                "rancoud/session": "^3.0 || ^4.0 || ^5.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2021-04-28T19:36:50+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Application\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Application package",
+            "support": {
+                "issues": "https://github.com/rancoud/Application/issues",
+                "source": "https://github.com/rancoud/Application/tree/5.2.2"
+            },
+            "install-path": "../rancoud/application"
+        },
+        {
+            "name": "rancoud/crypt",
+            "version": "3.2.2",
+            "version_normalized": "3.2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Crypt.git",
+                "reference": "80590a65ffb0f7508eedd850044417dee85acb59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Crypt/zipball/80590a65ffb0f7508eedd850044417dee85acb59",
+                "reference": "80590a65ffb0f7508eedd850044417dee85acb59",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2021-04-23T19:54:23+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Crypt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Crypt package",
+            "support": {
+                "issues": "https://github.com/rancoud/Crypt/issues",
+                "source": "https://github.com/rancoud/Crypt/tree/3.2.2"
+            },
+            "install-path": "../rancoud/crypt"
+        },
+        {
+            "name": "rancoud/database",
+            "version": "6.0.5",
+            "version_normalized": "6.0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Database.git",
+                "reference": "cce738e3ee38e5e219caaa133f787685496671d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Database/zipball/cce738e3ee38e5e219caaa133f787685496671d4",
+                "reference": "cce738e3ee38e5e219caaa133f787685496671d4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-pdo_mysql": "Needed to connect MySQL",
+                "ext-pdo_pgsql": "Needed to connect PostgreSQL",
+                "ext-pdo_sqlite": "Needed to connect SQLite"
+            },
+            "time": "2021-04-23T21:55:51+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Database\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Database package",
+            "support": {
+                "issues": "https://github.com/rancoud/Database/issues",
+                "source": "https://github.com/rancoud/Database/tree/6.0.5"
+            },
+            "install-path": "../rancoud/database"
+        },
+        {
+            "name": "rancoud/environment",
+            "version": "2.1.6",
+            "version_normalized": "2.1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Environment.git",
+                "reference": "24d8d3497d5ccab39a20e990b669efd6b9090247"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Environment/zipball/24d8d3497d5ccab39a20e990b669efd6b9090247",
+                "reference": "24d8d3497d5ccab39a20e990b669efd6b9090247",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": ">=7.4.0",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2021-04-28T19:08:27+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Environment\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Environment package",
+            "support": {
+                "issues": "https://github.com/rancoud/Environment/issues",
+                "source": "https://github.com/rancoud/Environment/tree/2.1.6"
+            },
+            "install-path": "../rancoud/environment"
+        },
+        {
+            "name": "rancoud/http",
+            "version": "3.1.0",
+            "version_normalized": "3.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Http.git",
+                "reference": "00bff72fba047a07149392aa93bac760b86ed826"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Http/zipball/00bff72fba047a07149392aa93bac760b86ed826",
+                "reference": "00bff72fba047a07149392aa93bac760b86ed826",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.4.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.2",
+                "squizlabs/php_codesniffer": "^3.5",
+                "symfony/process": "^5.2"
+            },
+            "time": "2021-04-26T12:27:26+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\": "src/Psr",
+                    "Rancoud\\Http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Http package",
+            "support": {
+                "issues": "https://github.com/rancoud/Http/issues",
+                "source": "https://github.com/rancoud/Http/tree/3.1.0"
+            },
+            "install-path": "../rancoud/http"
+        },
+        {
+            "name": "rancoud/model",
+            "version": "4.1.1",
+            "version_normalized": "4.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Model.git",
+                "reference": "55f2a19d4537619396ec1f402a051a067ff1836e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Model/zipball/55f2a19d4537619396ec1f402a051a067ff1836e",
+                "reference": "55f2a19d4537619396ec1f402a051a067ff1836e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-pdo": "*",
+                "php": ">=7.4.0",
+                "rancoud/database": "^5.0 || ^6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-pdo_mysql": "Needed to connect MySQL",
+                "ext-pdo_pgsql": "Needed to connect PostgreSQL",
+                "ext-pdo_sqlite": "Needed to connect SQLite"
+            },
+            "time": "2021-04-26T20:49:07+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Model\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Model package",
+            "support": {
+                "issues": "https://github.com/rancoud/Model/issues",
+                "source": "https://github.com/rancoud/Model/tree/4.1.1"
+            },
+            "install-path": "../rancoud/model"
+        },
+        {
+            "name": "rancoud/pagination",
+            "version": "3.1.1",
+            "version_normalized": "3.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Pagination.git",
+                "reference": "d0c52cc453c204016c29e4626f5e3431db927224"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Pagination/zipball/d0c52cc453c204016c29e4626f5e3431db927224",
+                "reference": "d0c52cc453c204016c29e4626f5e3431db927224",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.4.0",
+                "rancoud/security": "^3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2021-04-26T20:11:25+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Pagination\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Pagination package",
+            "support": {
+                "issues": "https://github.com/rancoud/Pagination/issues",
+                "source": "https://github.com/rancoud/Pagination/tree/3.1.1"
+            },
+            "install-path": "../rancoud/pagination"
+        },
+        {
+            "name": "rancoud/router",
+            "version": "3.1.0",
+            "version_normalized": "3.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Router.git",
+                "reference": "f1719ada797e2d89cbba501193e0fcd2fdabd131"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Router/zipball/f1719ada797e2d89cbba501193e0fcd2fdabd131",
+                "reference": "f1719ada797e2d89cbba501193e0fcd2fdabd131",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0",
+                "rancoud/http": "^3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2021-04-26T14:42:24+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Router\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Router package",
+            "support": {
+                "issues": "https://github.com/rancoud/Router/issues",
+                "source": "https://github.com/rancoud/Router/tree/3.1.0"
+            },
+            "install-path": "../rancoud/router"
+        },
+        {
+            "name": "rancoud/security",
+            "version": "3.0.6",
+            "version_normalized": "3.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Security.git",
+                "reference": "aaf0cf0f9bad69ec5b5a28f264d05054733b85b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Security/zipball/aaf0cf0f9bad69ec5b5a28f264d05054733b85b1",
+                "reference": "aaf0cf0f9bad69ec5b5a28f264d05054733b85b1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2021-04-23T20:02:50+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Security\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Security package",
+            "support": {
+                "issues": "https://github.com/rancoud/Security/issues",
+                "source": "https://github.com/rancoud/Security/tree/3.0.6"
+            },
+            "install-path": "../rancoud/security"
+        },
+        {
+            "name": "rancoud/session",
+            "version": "5.0.1",
+            "version_normalized": "5.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rancoud/Session.git",
+                "reference": "b5f23a9a8880995b1225d4108bda8481bb6d3eee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rancoud/Session/zipball/b5f23a9a8880995b1225d4108bda8481bb6d3eee",
+                "reference": "b5f23a9a8880995b1225d4108bda8481bb6d3eee",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "ext-session": "*",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^9.1",
+                "predis/predis": "^1.1",
+                "rancoud/database": "^5.0 || ^6.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2021-04-26T20:54:53+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rancoud\\Session\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Rancoud",
+                    "email": "contact@rancoud.com"
+                }
+            ],
+            "description": "Session package",
+            "support": {
+                "issues": "https://github.com/rancoud/Session/issues",
+                "source": "https://github.com/rancoud/Session/tree/5.0.1"
+            },
+            "install-path": "../rancoud/session"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

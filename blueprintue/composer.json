@@ -1,0 +1,31 @@
+{
+    "name": "blueprintue/blueprintue-self-hosted-edition",
+    "description": "blueprintUE self-hosted edition",
+    "authors": [
+        {
+            "name": "blueprintUE",
+            "email": "contact@blueprintue.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "require": {
+        "rancoud/application": "^5.0",
+        "rancoud/database": "^6.0",
+        "rancoud/model": "^4.0",
+        "rancoud/session": "^5.0",
+        "rancoud/crypt": "^3.0",
+        "rancoud/pagination": "^3.0",
+        "rancoud/security": "^3.0",
+        "erusev/parsedown": "^1.7",
+        "ext-fileinfo": "*",
+        "ext-gd": "*",
+        "ext-json": "*",
+        "phpmailer/phpmailer": "^6.2",
+        "php": ">=7.4.0"
+    }
+}

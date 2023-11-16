@@ -1,0 +1,46 @@
+{
+    "name": "rancoud/crypt",
+    "description": "Crypt package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastien Rancoud",
+            "email": "contact@rancoud.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Rancoud\\Crypt\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.4.0",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpunit/phpunit": "^9.1",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "scripts": {
+        "ci": [
+            "@lint",
+            "@test"
+        ],
+        "lint": [
+            "phpcbf",
+            "phpcs",
+            "php-cs-fixer fix"
+        ],
+        "test": [
+            "phpunit --colors --coverage-html ./coverage"
+        ]
+    }
+}

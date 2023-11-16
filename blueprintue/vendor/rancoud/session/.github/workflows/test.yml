@@ -1,0 +1,37 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+        php-version:
+          - '7.4'
+          - '8.0'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Pull
+        run: docker-compose pull --quiet
+
+      - name: Build
+        run: docker-compose build --build-arg PHPVERSION=${{ matrix.php-version }}
+
+      - name: Test
+        run: docker-compose run lib composer ci
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v1.4.1
+        if: success()
+        with:
+          file: ./coverage/clover.xml
