@@ -1,0 +1,22 @@
+diff --git a/blueprintue/app/helpers/Helper.php b/blueprintue/app/helpers/Helper.php
+index 801d9d5..279dc1d 100644
+--- a/blueprintue/app/helpers/Helper.php
++++ b/blueprintue/app/helpers/Helper.php
+@@ -146,6 +146,8 @@ class Helper
+     public static function getAllUEVersion(): array
+     {
+         return [
++            '5.3',
++            '5.2',
+             '5.1',
+             '5.0',
+             '4.27',
+@@ -184,7 +186,7 @@ class Helper
+      */
+     public static function getCurrentUEVersion(): string
+     {
+-        return '5.1';
++        return '5.3';
+     }
+ 
+     /**
