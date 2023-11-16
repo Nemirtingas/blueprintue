@@ -390,7 +390,14 @@ class Field
             throw new FieldException('Invalid datetime value');
         }
 
-        $datetime = DateTime::createFromFormat('Y-m-d H:i:s', $datetime);
+        $format = 'Y-m-d H:i:s';
+        if (strpos($value, '.') !== false) {
+          $format .= '.u';
+        }
+        $datetime = DateTime::createFromFormat($format, $datetime);
+        if ($datetime === false) {
+            throw new FieldException('Invalid date value');
+        }
 
         return $datetime->format('Y-m-d H:i:s');
     }
